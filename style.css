@@ -1,7 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    padding: 0;
+    padding-top: 80px;
     background-color: rgb(234, 234, 226);
     color: rgba(7, 7, 7, 0.857);
 }
@@ -9,7 +9,7 @@ body {
 .contenedor-imagen {
     position: relative;
     width: 100%;
-    margin: 0;
+    margin-top: 100px;
     padding: 0;
 }
 
@@ -30,13 +30,85 @@ p {
 
 .texto-en-imagen {
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 70%;
+    left: 5%;
     transform: translateY(0);
     color: white;
-    font-size: 2.5em;
+    font-size: 2.8em;
     font-family: 'Arial', sans-serif;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     text-align: left;
-    max-width: 80%;
+    max-width: 70%;
+    line-height: 1;
 }
+.lago-ranco {
+    font-size: 0.8em; /* Ajusta este valor a gusto (0.9em, 1em, etc.) */
+    font-family:Arial, sans-serif;
+    display: inline-block;
+    margin-top: 0.2em; /* Espacio opcional para separarlo un poco */
+}
+.navbar {
+    position: fixed;
+    top: 5%;
+    width: 100%;
+    background-color: rgb(234, 234, 226);
+    z-index: 1000;
+}
+
+/* Menú principal */
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(234, 234, 226);
+}
+
+.menu > li {
+    position: relative;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: rgba(17, 15, 15, 0.898);
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+.menu > li > a:hover {
+    background-color: #444;
+}
+
+/* Submenú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #444;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+    }
+
+.dropdown-content li a {
+    padding: 12px 16px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Añade espacio al contenido por la barra fija */
+body {
+  padding-top: 60px; /* ajusta según altura del menú */
+}
+
