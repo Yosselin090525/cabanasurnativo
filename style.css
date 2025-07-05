@@ -148,6 +148,109 @@ body {
 body {
   padding-top: 60px; /* ajusta según altura del menú */
 }
+.galeria-cabanas {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.galeria-cabanas h2 {
+    font-size: 2rem;
+    color: #3c5b4f;
+    margin-bottom: 30px;
+}
+
+.galeria-interior {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.foto-cabana {
+    background-color: #f4f1ec;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.foto-cabana:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.foto-cabana img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.foto-cabana:hover img {
+    transform: scale(1.05);
+}
+
+.foto-cabana p {
+    margin: 10px;
+    font-weight: 500;
+    color: #2e3d2f;
+}
+
+
+.lugares-cercanos {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lugares-cercanos h2 {
+    font-size: 2rem;
+    color: #3c5b4f;
+    margin-bottom: 30px;
+}
+
+.galeria-lugares {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.lugar {
+    background-color: #f4f1ec;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.lugar:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.lugar img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.lugar:hover img {
+    transform: scale(1.05);
+}
+
+.lugar p {
+    margin: 10px 0;
+    font-weight: 500;
+    color: #2e3d2f;
+}
+
 
 /* Estilos para el formulario */
 .formulario-contacto {
