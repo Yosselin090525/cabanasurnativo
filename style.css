@@ -9,7 +9,7 @@ body {
 .contenedor-imagen {
     position: relative;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 10px;
     padding: 0;
 }
 
@@ -30,7 +30,7 @@ p {
 
 .texto-en-imagen {
     position: absolute;
-    top: 70%;
+    top: 50%;
     left: 5%;
     transform: translateY(0);
     color: white;
@@ -42,14 +42,31 @@ p {
     line-height: 1;
 }
 .lago-ranco {
-    font-size: 0.8em; /* Ajusta este valor a gusto (0.9em, 1em, etc.) */
+    font-size: 0,9em; /* Ajusta este valor a gusto (0.9em, 1em, etc.) */
     font-family:Arial, sans-serif;
     display: inline-block;
     margin-top: 0.2em; /* Espacio opcional para separarlo un poco */
 }
+.boton-reserva {
+    display: inline-block;
+    margin-top: 0px;
+    padding: 6px 12px;
+    background-color: #8c5e3c;
+    color: white;
+    font-size: 0,8em;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.boton-reserva:hover {
+    background-color: #6e472c;
+}
 .navbar {
     position: fixed;
-    top: 5%;
+    top: 0%;
     width: 100%;
     background-color: rgb(234, 234, 226);
     z-index: 1000;
@@ -78,7 +95,9 @@ p {
 }
 
 .menu > li > a:hover {
-    background-color: #444;
+    background-color:transparent;
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 /* Submenú desplegable */
@@ -110,5 +129,59 @@ p {
 /* Añade espacio al contenido por la barra fija */
 body {
   padding-top: 60px; /* ajusta según altura del menú */
+}
+
+/* Estilos para el formulario */
+.formulario-contacto {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contacto button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8c5e3c; /* café o tono natural */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #6e472c;
+    }
+
+#mensaje-exito {
+    margin-top: 15px;
+    color: green;
+    text-align: center;
 }
 

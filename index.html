@@ -8,18 +8,6 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="contenedor-imagen">
-    <img src="cabaña.jpg" alt="Vista panorámica de las cabañas junto al Lago Ranco">
-    <div class="texto-en-imagen">
-    Cabañas Sur Nativo<br>
-    <span class="lago-ranco">Lago Ranco</span>
-    </div>
-    </div>
-    
-    
-    <p>Relájate en el corazón natural del Lago Ranco</p>
-    <script src="script.js"></script>
-
     <nav class="navbar">
     <ul class="menu">
     <li><a href="#inicio">Inicio</a></li>
@@ -35,8 +23,44 @@
     <li><a href="#nosotros">Nosotros</a></li>
     <li><a href="#reservar">Reservar</a></li>
     </ul>
+    <div class="iconos-sociales">
+    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:info@suractivo.cl"><i class="fas fa-envelope"></i></a>
+</div>
 </nav>
+    <div class="contenedor-imagen">
+    <img src="cabaña.jpg" alt="Vista panorámica de las cabañas junto al Lago Ranco">
+    <div class="texto-en-imagen">
+    Cabañas Sur Nativo<br>
+    <span class="lago-ranco">Lago Ranco</span>
+    <div class="boton-reserva">Reserva Alojamiento</div>
+    </div>
+    </div>
+    
+    
+    <p>Relájate en el corazón natural del Lago Ranco</p>
+    <script src="script.js"></script>
+    
+    <section class="formulario-contacto oculto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form id="formContacto">
+    <input type="text" id="nombre" placeholder="Nombre completo" required />
+    <input type="email" id="correo" placeholder="Correo electrónico" required />
+    <textarea id="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+    <button type="submit">Enviar</button>
+    </form>
+    <div id="mensaje-exito"></div>
+    </section>
+
+    <footer>
+    <div class="container">
+    <p>&copy; 2025 Cabañas Sur Nativo. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+    
 
 
 </body>
 </html>
+
